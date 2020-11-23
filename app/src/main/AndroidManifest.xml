@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.alarm">
+    package="com.example.alarm" >
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,12 +11,25 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Alarm">
+        android:theme="@style/Theme.Alarm" >
+        <activity
+            android:name=".Doctor"
+            android:label="@string/title_activity_doctor"
+            android:theme="@style/Theme.Alarm.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Caretaker"
+            android:label="@string/title_activity_caretaker"
+            android:theme="@style/Theme.Alarm.NoActionBar" />
+        <activity android:name=".Scheduler"
+            android:theme="@style/Theme.Alarm.NoActionBar"
+            />
         <activity
             android:name=".MainActivity"
             android:label="HealthApp"
             android:theme="@style/Theme.Alarm.NoActionBar" />
-        <activity android:name=".Scheduler">
+        <activity android:name=".FirstScreen"
+            android:theme="@style/Theme.Alarm.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

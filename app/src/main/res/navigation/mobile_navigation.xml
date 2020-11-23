@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_info">
+
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.example.alarm.ui.home.HomeFragment"
+        android:label="@string/info"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_list"
+        android:name="com.example.alarm.ui.gallery.GalleryFragment"
+        android:label="@string/list"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_emergency"
+        android:name="com.example.alarm.ui.slideshow.SlideshowFragment"
+        android:label="@string/emer"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_meeting"
+        android:name="com.example.alarm.ui.home.HomeFragment"
+        android:label="@string/meeting"
+        tools:layout="@layout/fragment_meeting" />
+</navigation>

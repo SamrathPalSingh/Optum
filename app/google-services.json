@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "520627158614",
+    "firebase_url": "https://optumhack-2c687.firebaseio.com",
+    "project_id": "optumhack-2c687",
+    "storage_bucket": "optumhack-2c687.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520627158614:android:fa4f3833105b89a47945f7",
+        "android_client_info": {
+          "package_name": "com.example.alarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520627158614-07j6leaamcq7vbnc2uigi11o3h7pavmt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoxk8vvgDQcT8JtDz-_0vkl3KzJoFfTv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520627158614-07j6leaamcq7vbnc2uigi11o3h7pavmt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

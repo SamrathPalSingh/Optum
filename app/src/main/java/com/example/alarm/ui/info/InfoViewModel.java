@@ -1,16 +1,16 @@
-package com.example.alarm.ui.slideshow;
+package com.example.alarm.ui.info;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SlideshowViewModel extends ViewModel {
+public class InfoViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public SlideshowViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+    public InfoViewModel() {
+//        mText = new MutableLiveData<>();
+//        mText.setValue("This is Info fragment");
     }
 
     public LiveData<String> getText() {

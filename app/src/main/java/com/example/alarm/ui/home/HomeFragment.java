@@ -22,20 +22,23 @@ public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
     private ToggleButton toggle;
+    private TextView t;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
                 new ViewModelProvider(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
-
+        t = root.findViewById(R.id.textView2);
         toggle = (ToggleButton) root.findViewById(R.id.togglebutton);
         toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                         setZoomOn();
+                        t.setText("https://meet.google.com/pfs-kavj-man");
                 } else {
                     setZoomOff();
+                    t.setText("");
                 }
             }
         });

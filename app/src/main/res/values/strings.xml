@@ -16,6 +16,7 @@
     <string name="nav_header_subtitle">cronaldo_be17@thapar.edu</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="twitterUsername">\@joeytribbiani</string>
 
     <string name="info">Edit Info</string>
     <string name="list">Patients List</string>

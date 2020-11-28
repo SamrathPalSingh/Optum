@@ -16,9 +16,11 @@ public class MyAlarmReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         // TODO Auto-generated method stub
           notificationManager = NotificationManagerCompat.from(context);
-          Notification notification = new NotificationCompat.Builder(context, "channel1").setSmallIcon(R.drawable.ic_launcher_background).setContentTitle("Title").setContentText("Message: Take your pill").setPriority(NotificationCompat.PRIORITY_HIGH).setCategory(NotificationCompat.CATEGORY_ALARM).build();
+          String msg=intent.getStringExtra("msg").toString();
+          String tag = intent.getStringExtra("tag").toString();
+          Notification notification = new NotificationCompat.Builder(context, "channel1").setSmallIcon(R.drawable.ic_launcher_background).setContentTitle(tag).setContentText(msg).setPriority(NotificationCompat.PRIORITY_HIGH).setCategory(NotificationCompat.CATEGORY_ALARM).build();
           notificationManager.notify(1, notification);
         Log.e("onReceive", "--------------------------------------------------------------------");
-        Toast.makeText(context, "OnReceive alarm test", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "Health Alert", Toast.LENGTH_SHORT).show();
     }
 }

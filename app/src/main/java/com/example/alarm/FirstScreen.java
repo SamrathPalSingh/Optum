@@ -26,7 +26,7 @@ public class FirstScreen extends AppCompatActivity {
         btnPatient.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FirstScreen.this, MenuPatient.class);
+                Intent intent = new Intent(FirstScreen.this, LoginPatient.class);
                 startActivity(intent);
             }
         });
@@ -51,7 +51,7 @@ public class FirstScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_screen);
         init();
-        setAlarm(16,22,"Take a diabties check","Hello!");
+        setAlarm(16,22,"Take a diabetes check","Hello!");
     }
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)

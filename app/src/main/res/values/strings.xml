@@ -18,6 +18,7 @@
     <string name="action_settings">Settings</string>
     <string name="twitterUsername">\@joeytribbiani</string>
 
+    <string name="attach">Upload Prescription</string>
     <string name="info">Edit Info</string>
     <string name="list">Patients List</string>
     <string name="emer">Emergency</string>

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F4F4F4"
-    tools:context=".MainActivity">
+    tools:context=".DoctorsList">
 
 
     <LinearLayout
@@ -30,22 +30,12 @@
                     android:layout_marginTop="20dp"
                     android:textSize="32sp"
                     android:textColor="#FFF"
-                    android:text="My Do's"
+                    android:text="Doctors Available"
                     android:textAlignment="center"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal" />
 
-                <TextView
-                    android:id="@+id/subtitlepage"
-                    android:textSize="18sp"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="8dp"
-                    android:text="Finish Them Quickly Today"
-                    android:textAlignment="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal" />
 
             </LinearLayout>
 
@@ -74,7 +64,7 @@
         android:textSize="16sp"
         android:textColor="#9A9A9A"
         android:layout_marginTop="20dp"
-        android:text="No More Do's"
+        android:text="End of the list"
         android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

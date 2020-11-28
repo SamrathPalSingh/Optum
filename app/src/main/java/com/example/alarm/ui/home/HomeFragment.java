@@ -1,5 +1,7 @@
 package com.example.alarm.ui.home;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,7 +29,8 @@ public class HomeFragment extends Fragment {
         s = root.findViewById(R.id.status_switch);
         s.setChecked(false);
         if(s.isChecked()){
-            //Go Online
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://meet.google.com/bcg-dtoe-zxd"));
+            startActivity(browserIntent);
         }
         else{
             //Remain offline

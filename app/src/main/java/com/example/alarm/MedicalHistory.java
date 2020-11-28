@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -47,7 +49,7 @@ public class MedicalHistory extends AppCompatActivity {
                 medHistory.Med=eTxtMed.getText().toString();
                 medHistory.Duration=eTxtStMed.getText().toString();
                 medHistory.MedReport=eTxtMedRep.getText().toString();
-                addDataToFirebase();
+//                addDataToFirebase();
                 Intent intent=new Intent(MedicalHistory.this, MenuPatient.class);
                 startActivity(intent);
                 finish();
@@ -71,6 +73,51 @@ public class MedicalHistory extends AppCompatActivity {
                     }
                 });
 
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        menu.add(1,101,1,"Home").setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+        menu.add(1,201,1,"Scheduler").setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+        menu.add(1,301,1,"Meet with Doctor").setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+        menu.add(1,401,1,"Edit Personal Information").setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+        menu.add(1,501,1,"Take Reading").setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+        menu.add(1,601,1,"Log Out").setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()==101){
+            Log.i("Info1","101");
+            Intent intent=new Intent(MedicalHistory.this,MenuPatient.class);
+            startActivity(intent);
+        }
+        if(item.getItemId()==201){
+            Log.i("Info2","102");
+            Intent intent=new Intent(MedicalHistory.this,Scheduler.class);
+            startActivity(intent);
+        }
+        if(item.getItemId()==301){
+            Log.i("Info3","103");
+            Intent intent=new Intent(MedicalHistory.this,DocDept.class);
+            startActivity(intent);
+        }
+        if(item.getItemId()==401){
+            Log.i("Info4","104");
+            Intent intent=new Intent(MedicalHistory.this,MedicalDetails.class);
+            startActivity(intent);
+        }
+        if(item.getItemId()==501){
+            Log.i("Info5","105");
+            Intent intent=new Intent(MedicalHistory.this,GlucoseReading.class);
+            startActivity(intent);
+        }
+        if(item.getItemId()==601){
+            Log.i("Info5","105");
+            Intent intent=new Intent(MedicalHistory.this,LoginPatient.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {

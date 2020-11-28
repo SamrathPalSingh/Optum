@@ -31,7 +31,7 @@ public class MenuPatient extends AppCompatActivity {
         TxtMedRep=findViewById(R.id.TextViewMedicalReports);
         TxtMedications=findViewById(R.id.TextViewMedicines);
         TxtmedStDt=findViewById(R.id.TextViewStartMed);
-        fetchPatientInfo();
+//        fetchPatientInfo();
     }
     void fetchPatientInfo(){
         FirebaseUser firebaseUser= FirebaseAuth.getInstance().getCurrentUser();
@@ -67,7 +67,8 @@ public class MenuPatient extends AppCompatActivity {
         menu.add(1,201,1,"Meet with Doctor").setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
         menu.add(1,301,1,"Edit Medical Information").setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
         menu.add(1,401,1,"Edit Personal Information").setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
-        menu.add(1,501,1,"Log Out").setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+        menu.add(1,501,1,"Take Reading").setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+        menu.add(1,601,1,"Log Out").setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -80,17 +81,28 @@ public class MenuPatient extends AppCompatActivity {
         }
         if(item.getItemId()==201){
             Log.i("Info2","102");
-            Intent intent=new Intent(MenuPatient.this,Scheduler.class);
+            Intent intent=new Intent(MenuPatient.this,DocDept.class);
             startActivity(intent);
         }
         if(item.getItemId()==301){
             Log.i("Info3","103");
+            Intent intent=new Intent(MenuPatient.this,MedicalHistory.class);
+            startActivity(intent);
         }
         if(item.getItemId()==401){
             Log.i("Info4","104");
+            Intent intent=new Intent(MenuPatient.this,MedicalDetails.class);
+            startActivity(intent);
         }
         if(item.getItemId()==501){
             Log.i("Info5","105");
+            Intent intent=new Intent(MenuPatient.this,GlucoseReading.class);
+            startActivity(intent);
+        }
+        if(item.getItemId()==601){
+            Log.i("Info5","105");
+            Intent intent=new Intent(MenuPatient.this,LoginPatient.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }

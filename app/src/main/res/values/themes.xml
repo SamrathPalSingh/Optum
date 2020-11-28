@@ -15,8 +15,8 @@
     </style>
 
     <style name="Theme.Alarm.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
     </style>
 
     <style name="Theme.Alarm.AppBarOverlay" parent="ThemeOverlay.AppCompat.DayNight.ActionBar" />

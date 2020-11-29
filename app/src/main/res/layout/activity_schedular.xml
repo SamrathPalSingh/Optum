@@ -12,7 +12,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/black"
         android:layout_height="198dp">
 
         <LinearLayout
@@ -39,7 +39,7 @@
                 <TextView
                     android:id="@+id/subtitlepage"
                     android:textSize="18sp"
-                    android:textColor="#4A4E6A"
+                    android:textColor="@color/white"
                     android:layout_marginTop="8dp"
                     android:text="Finish Them Quickly Today"
                     android:textAlignment="center"
@@ -54,7 +54,7 @@
         <View
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            android:background="#131E69"
+            android:background="@color/colorblack"
             android:layout_height="1dp" />
 
     </LinearLayout>

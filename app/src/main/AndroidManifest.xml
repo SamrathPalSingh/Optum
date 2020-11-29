@@ -17,7 +17,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Alarm">
-        <activity android:name=".ChatPatient"></activity>
+        <activity android:name=".LoginDoctor"></activity>
+        <activity android:name=".RegisterDoctor" />
+        <activity android:name=".RegisterCaretaker" />
+        <activity android:name=".LoginCaretaker" />
+        <activity android:name=".ChatPatient" />
         <activity android:name=".DoctorsList" />
         <activity android:name=".Prescription" />
         <activity android:name=".DocDept" />

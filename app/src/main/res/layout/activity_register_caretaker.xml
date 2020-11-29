@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-
+    xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/black">
-
+    android:id="@+id/container"
+    android:background="@color/black"
+    tools:context=".RegisterCaretaker">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="252dp"
         android:layout_height="51dp"
         android:layout_marginTop="44dp"
-        android:textAlignment="center"
-        android:text="Your Details"
+        android:text="Complete your Details"
         android:textSize="25dp"
         android:layout_gravity="center"
         android:textColor="@color/white"
@@ -32,71 +32,69 @@
         android:padding="16dp">
 
         <EditText
-            android:id="@+id/Name"
+            android:id="@+id/NameCaretaker"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Name"
             android:textColorHint="@color/black"
             android:textColor="@color/black"
+            android:hint="Enter your Name"
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/Dob"
+            android:id="@+id/GenderCaretaker"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:textColorHint="@color/black"
             android:textColor="@color/black"
-            android:inputType="date"
-            android:hint="DOB" />
-
-        <EditText
-            android:id="@+id/Gender"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:ems="10"
-            android:textColorHint="@color/black"
-            android:textColor="@color/black"
             android:inputType="textPersonName"
             android:hint="Gender"
             />
         <EditText
-            android:id="@+id/ContactNumber"
+            android:id="@+id/CaretakerContactNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:inputType="phone"
             android:textColorHint="@color/black"
             android:textColor="@color/black"
-            android:inputType="phone"
-            android:hint="Contact Number" />
+            android:hint="Enter your Contact Number" />
         <EditText
-            android:id="@+id/EmailAdd"
+            android:id="@+id/CaretakerEmailAdd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:textColorHint="@color/black"
             android:textColor="@color/black"
             android:inputType="textEmailAddress"
-            android:hint="Email Address" />
+            android:hint="Enter your Email Address" />
         <EditText
-            android:id="@+id/Address"
+            android:id="@+id/CaretakerPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:hint="Enter your Password" />
+        <EditText
+            android:id="@+id/CaretakerAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:textColorHint="@color/black"
             android:textColor="@color/black"
             android:inputType="textPersonName"
-            android:hint="Address" />
+            android:hint="Enter your Address" />
 
         <Button
-            android:id="@+id/buttonSubmit"
+            android:id="@+id/buttonSubmitCaretaker"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Submit"
             android:textColor="@color/white"
             android:background="@color/black"/>
-
 
     </LinearLayout>
 

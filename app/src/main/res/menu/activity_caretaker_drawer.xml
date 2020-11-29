@@ -16,13 +16,5 @@
             android:id="@+id/nav_list"
             android:icon="@drawable/ic_baseline_view_list_24"
             android:title="@string/list" />
-        <item
-            android:id="@+id/nav_emergency"
-            android:icon="@drawable/ic_baseline_warning_24"
-            android:title="@string/emer" />
-        <item
-            android:id="@+id/nav_meeting"
-            android:icon="@drawable/ic_baseline_video_call_24"
-            android:title="@string/meeting" />
     </group>
 </menu>

@@ -1,7 +1,10 @@
 package com.example.alarm;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.navigation.NavController;
@@ -27,7 +30,7 @@ public class Caretaker extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home,R.id.nav_info, R.id.nav_list, R.id.nav_emergency,R.id.nav_meeting)
+                R.id.nav_home,R.id.nav_info, R.id.nav_list)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -47,5 +50,10 @@ public class Caretaker extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public void solve(View view) {
+        Intent intent = new Intent(Caretaker.this,DocDept.class);
+        startActivity(intent);
     }
 }

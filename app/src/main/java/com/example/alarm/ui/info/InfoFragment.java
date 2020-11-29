@@ -1,9 +1,11 @@
 package com.example.alarm.ui.info;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -12,17 +14,26 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.alarm.Caretaker;
 import com.example.alarm.R;
 
 public class InfoFragment extends Fragment {
 
     private com.example.alarm.ui.info.InfoViewModel galleryViewModel;
-
+    private Button btn;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         galleryViewModel =
                 new ViewModelProvider(this).get(com.example.alarm.ui.info.InfoViewModel.class);
         View root = inflater.inflate(R.layout.fragment_info, container, false);
+        btn = root.findViewById(R.id.buttonSubmit);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), Caretaker.class);
+                startActivity(intent);
+            }
+        });
 //        final TextView textView = root.findViewById(R.id.text_gallery);
 //        galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
 //            @Override

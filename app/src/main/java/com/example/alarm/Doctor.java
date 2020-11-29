@@ -1,10 +1,14 @@
 package com.example.alarm;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Switch;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -20,7 +24,7 @@ public class Doctor extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private Button btn;
-
+    private Switch s;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +43,7 @@ public class Doctor extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_doctor_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-
+        s = findViewById(R.id.status_switch);
 
     }
 

@@ -33,14 +33,14 @@ public class FirstScreen extends AppCompatActivity {
         btnCaretaker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FirstScreen.this,Caretaker.class);
+                Intent intent = new Intent(FirstScreen.this,LoginCaretaker.class);
                 startActivity(intent);
             }
         });
         btnDoctor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FirstScreen.this,Doctor.class);
+                Intent intent = new Intent(FirstScreen.this,LoginDoctor.class);
                 startActivity(intent);
             }
         });

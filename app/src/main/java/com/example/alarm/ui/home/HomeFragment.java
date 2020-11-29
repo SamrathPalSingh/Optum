@@ -28,13 +28,13 @@ public class HomeFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_doctor_home, container, false);
         s = root.findViewById(R.id.status_switch);
         s.setChecked(false);
-        if(s.isChecked()){
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://meet.google.com/bcg-dtoe-zxd"));
-            startActivity(browserIntent);
-        }
-        else{
-            //Remain offline
-        }
+//        if(s.isChecked()){
+//            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://meet.google.com/bcg-dtoe-zxd"));
+//            startActivity(browserIntent);
+//        }
+//        else{
+//            //Remain offline
+//        }
 //        t = root.findViewById(R.id.textView2);
 //        toggle = (ToggleButton) root.findViewById(R.id.togglebutton);
 //        toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
